@@ -1,0 +1,390 @@
+/* Reset básico para eliminar márgenes y paddings predeterminados y definir el box-sizing para todos los elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales para el cuerpo de la página */
+body {
+    color: #000000; /* Color del texto */
+    line-height: 1.6; /* Espaciado entre líneas */
+    background-color: #f4f4f9; /* Color de fondo */
+    font-family: Arial, sans-serif; /* Fuente principal */
+}
+
+/* Encabezado y Navegación */
+header {
+    background-color: #003366; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto en el encabezado */
+    padding: 1rem 0; /* Espaciado superior e inferior */
+}
+
+/* Contenedor de la navegación dentro del encabezado */
+header nav {
+    display: flex;
+    justify-content: space-between; /* Espacio entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado del contenedor */
+    padding: 0 2rem; /* Espaciado lateral */
+}
+
+/* Lista de enlaces de navegación */
+header nav ul {
+    list-style: none; /* Quitar el estilo de lista */
+    display: flex;
+    gap: 1.5rem; /* Espaciado entre enlaces */
+}
+
+/* Estilos de los enlaces de navegación */
+header nav ul li a {
+    color: #fff; /* Color de los enlaces */
+    text-decoration: none; /* Quitar subrayado */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    transition: background 0.3s; /* Transición suave al pasar el ratón */
+}
+
+/* Efecto hover en los enlaces de navegación */
+header nav ul li a:hover {
+    background-color: #00509e; /* Color de fondo al pasar el ratón */
+    border-radius: 5px; /* Bordes redondeados */
+}
+/* Estilos para centrar el contenido del menú de navegación */
+nav {
+    display: flex;
+    justify-content: space-between; /* Espacia el logo y el menú de navegación */
+    align-items: center; /* Alinea el contenido verticalmente en el centro */
+    padding: 10px 20px; /* Ajusta el espacio interior del menú */
+}
+
+/* Estilo para el contenedor del logo */
+.logo {
+    display: flex;
+    align-items: center; /* Alinea el logo y el texto verticalmente */
+}
+
+/* Estilo para el nombre del club */
+.logo .club-name {
+    font-size: 1.2em; /* Ajusta el tamaño de fuente según sea necesario */
+    font-weight: bold;
+    margin-left: 20px; /* Espacio entre el logo y el nombre */
+    color: #ffffff; /* Color del texto, ajusta según el diseño */
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    max-width: 50px; /* Tamaño máximo de la imagen */
+
+
+}
+
+/* Sección de introducción (Hero Section) */
+.hero {
+    background-image: url('hero-background.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Ajuste de la imagen para cubrir toda el área */
+    background-position: center; /* Centrado de la imagen */
+    padding: 5rem 2rem; /* Espaciado interno */
+    color: #000000; /* Color del texto */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Contenedor del contenido de la sección de introducción */
+.hero-content {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: auto; /* Centrado del contenedor */
+}
+
+/* Título de la sección de introducción */
+.hero h1 {
+    font-size: 2.5rem; /* Tamaño del título */
+    margin-bottom: 1rem; /* Espaciado inferior */
+}
+
+/* Descripción de la sección de introducción */
+.hero p {
+    text-align: left;
+    font-size: 1.2rem; /* Tamaño de la fuente */
+    margin-bottom: 2rem; /* Espaciado inferior */
+    
+}
+
+/* Estilo del botón principal */
+.btn-primary {
+    background-color: #ff6b6b; /* Color de fondo del botón */
+    color: #fff; /* Color del texto */
+    padding: 0.75rem 1.5rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Quitar subrayado */
+    font-weight: bold; /* Negrita */
+    transition: background 0.3s; /* Transición suave */
+}
+
+/* Efecto hover en el botón principal */
+.btn-primary:hover {
+    background-color: #ff4c4c; /* Color de fondo al pasar el ratón */
+}
+/* Contenedor de cada grupo de formulario */
+.form-group {
+    margin-bottom: 1rem; /* Espacio inferior entre campos del formulario */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo de las etiquetas de los campos del formulario */
+label {
+    display: block; /* Cada etiqueta ocupa una línea completa */
+    margin-bottom: 0.5rem; /* Espacio inferior entre etiqueta y campo */
+    font-weight: bold; /* Texto en negrita para destacar la etiqueta */
+}
+
+/* Campos de entrada de texto, teléfono y correo, además del área de texto */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%; /* Campo ocupa todo el ancho del contenedor */
+    padding: 0.5rem; /* Espacio interno para mejor legibilidad */
+    border: 1px solid #ccc; /* Borde gris claro */
+    border-radius: 4px; /* Bordes redondeados para un diseño más suave */
+}
+
+/* Estilo general para los botones */
+button {
+    background-color: #003366; /* Fondo azul oscuro */
+    color: white; /* Texto en blanco */
+    padding: 0.75rem 1.5rem; /* Espacio interno en el botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor cambia a "mano" al pasar el ratón */
+    transition: background 0.3s; /* Transición suave al cambiar el fondo */
+}
+
+/* Efecto hover para el botón */
+button:hover {
+    background-color: #00509e; /* Fondo azul más claro */
+}
+
+/* Contenedor de la sección de misión y visión */
+.mision-vision {
+    display: flex; /* Coloca los elementos en una línea horizontal */
+    gap: 2rem; /* Espacio entre misión y visión */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en múltiples líneas si es necesario */
+    margin-bottom: 2rem; /* Espacio inferior para separar de otras secciones */
+}
+
+/* Estilos específicos para los contenedores de misión y visión */
+.mision, .vision {
+    flex: 1 1 45%; /* Cada elemento ocupa hasta el 45% del ancho del contenedor */
+    background-color: #e0f7fa; /* Fondo azul claro */
+    padding: 1.5rem; /* Espacio interno */
+    border-radius: 8px; /* Bordes redondeados */
+    text-align: justify;
+    border-left: 4px solid #00796b; /* Línea de borde verde a la izquierda */
+}
+
+/* Estilo para los títulos de misión y visión */
+h3 {
+    color: #000000; /* Color azul del texto */
+    margin-bottom: 0.5rem; /* Espacio inferior */
+    text-align: left;
+}
+
+
+/* Estilo general para las secciones */
+.section {
+    padding: 3rem 2rem; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo */
+    margin: auto; /* Centrado */
+    text-align: left; /* Centrado del texto */
+    
+}
+
+/* Título de las secciones */
+.section h2 {
+    color: #00509e; /* Color del texto */
+    font-size: 2rem; /* Tamaño del texto */
+    margin-bottom: 1rem; /* Espaciado inferior */
+    margin: auto; /* Centrado */
+    text-align: center;
+}
+
+/* Párrafo en las secciones */
+.section p {
+    margin-bottom: 1.5rem; /* Espaciado inferior */
+    text-align: left; /* Centrado del texto */
+}
+
+/* Lista de actividades */
+.activity-list {
+    list-style: none; /* Quitar el estilo de lista */
+    display: grid; /* Grid para organizar elementos */
+    gap: 1rem; /* Espaciado entre elementos */
+    grid-template-columns: 1fr 1fr; /* Dos columnas */
+    max-width: 600px; /* Ancho máximo */
+    margin: auto; /* Centrado */
+    text-align: left; /* Alineación del texto a la izquierda */
+}
+
+/* Estilo de cada actividad en la lista */
+.activity-list li {
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    background-color: #e0f7fa; /* Color de fondo */
+    border-left: 4px solid #00796b; /* Línea de borde a la izquierda */
+}
+
+/* Galería de imágenes */
+.galeria {
+    display: flex;
+    flex-wrap: wrap; /* Permite el ajuste de elementos */
+    gap: 1rem; /* Espaciado entre imágenes */
+    justify-content: center; /* Centrado */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+/* Contenedor de cada imagen en la galería */
+.galeria figure {
+    flex: 1 1 200px; /* Tamaño de cada imagen en proporción */
+    max-width: 250px; /* Ancho máximo */
+    text-align: center; /* Centrado del texto */
+}
+
+/* Estilo de las imágenes en la galería */
+.galeria img {
+    width: 100%; /* Ancho completo */
+    border-radius: 8px; /* Bordes redondeados */
+    transition: transform 0.3s ease; /* Transición de transformación */
+}
+
+/* Efecto hover en las imágenes de la galería */
+.galeria img:hover {
+    transform: scale(1.05); /* Escalado al pasar el ratón */
+}
+
+/* Texto bajo las imágenes en la galería */
+figure figcaption {
+    font-size: 0.9rem; /* Tamaño de la fuente */
+    color: #000000; /* Color del texto */
+    margin-top: 0.5rem; /* Espaciado superior */
+    font-weight: bold;
+}
+
+/* Contenedor para la tabla de datos generales */
+.table-container {
+    overflow-x: auto; /* Scroll horizontal si es necesario */
+    margin-top: 2rem; /* Espaciado superior */
+}
+
+/* Tabla de datos generales */
+.general-table {
+    width: 100%; /* Ancho completo */
+    border-collapse: collapse; /* Quitar separación entre celdas */
+    margin-top: 1.5rem; /* Espaciado superior */
+}
+
+/* Celdas de la tabla */
+.general-table th, .general-table td {
+    padding: 1rem; /* Espaciado interno */
+    border: 1px solid #000000; /* Borde de las celdas */
+    text-align: center; /* Texto centrado */
+    color: #000000; /* Color del texto azul */
+    font-weight: bold; /* Negrita */  
+}
+
+/* Encabezado de la tabla */
+.general-table th {
+    background-color: #003366; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    font-weight: bold; /* Negrita */
+}
+
+/* Filas alternas en la tabla */
+.general-table tbody tr:nth-child(even) {
+    background-color: #ffffff; /* Color de fondo */
+}
+
+/* Efecto hover en las filas de la tabla */
+.general-table tbody tr:hover {
+    background-color: #81b8f0; /* Color de fondo al pasar el ratón */
+}
+
+/* Pie de página */
+footer {
+    background-color: #003366; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    text-align: center; /* Texto centrado */
+    padding: 1rem 0; /* Espaciado interno */
+    font-size: 0.9rem; /* Tamaño de la fuente */
+}
+
+/* Estilos responsivos para pantallas pequeñas */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column; /* Cambia a columnas */
+    }
+
+    .activity-list {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Tamaño del título */
+    }
+
+    .hero p {
+        font-size: 1rem; /* Tamaño de la descripción */
+    }
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+body {
+    padding-top: 60px; /* Ajuste para evitar que el contenido quede oculto detrás del menú */
+}
+
+/* Estilos para el Footer */
+footer {
+    display: flex; /* Activar flexbox */
+    align-items: center; /* Alinear verticalmente al centro */
+    justify-content: center; /* Centrar horizontalmente */
+    background-color: #003366; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 1rem 0; /* Espaciado interno */
+    margin-top: 5px; /* Espaciado superior */
+}
+
+/* Para asegurarte de que los elementos dentro del footer no se muevan de línea */
+footer p {
+    margin: 0; /* Quitar márgenes */
+}
+
+/* Estilos para los enlaces en el footer */
+footer a {
+    color: #ffd700; /* Color de los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    margin: 0 5px; /* Espaciado lateral entre enlaces */
+    font-weight: bold; /* Negrita */
+}
+
+
+
+/* Estilos para el contenedor de redes sociales en el pie de página */
+.social-media {
+    display: flex;
+    gap: 5px; /* Espacio entre los iconos */
+    justify-content: center; /* Centra los íconos en el footer */
+    margin-top: 5px; /* Espacio superior opcional */
+}
+
+.social-media a img {
+    width: 24px; /* Tamaño de los iconos */
+    transition: transform 0.2s; /* Efecto de transición */
+}
+
+.social-media a:hover img {
+    transform: scale(1.1); /* Efecto de zoom en hover */
+}
